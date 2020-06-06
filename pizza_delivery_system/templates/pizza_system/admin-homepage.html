@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Image and text -->
+<nav class="navbar navbar-light" style="background-color: #484e65;">
+  <a class="navbar-brand" href="#">
+    <img src=data:image/png;base64,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 width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Todo
+  </a>
+	<!-- <img src="https://img.icons8.com/ios/50/000000/todo-list.png"/> -->
+<!-- 	<svg class="bi bi-check2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg> -->
+<!--   <a class="navbar-brand" style="color : white">Welcome Admin!!</a> -->
+<!--   <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form> -->
+  <a class="btn btn-danger" href="/logout_admin/">logout</a>
+</nav>
+<form method="post" action="/add_todo/">
+	{% csrf_token %}
+	<div class="container" style="width: 330px;display: block;margin: auto">
+		<input type="text" class="form-control" placeholder="todo description" name="todo_description" style="width: 200px;display: inline;margin: auto">
+<!-- 		<input type="text" class="form-control" placeholder="todo definition" name="todo_definition" style="width: 200px;display: inline;margin: auto"> -->
+		<input type="submit" style="display: inline;" value="add" name="" class="btn btn-success">
+	</div>
+</form>
+<table class="table table-hover">
+  <thead>
+    <tr>
+		<th style="width: 25%" scope="col">Todo Description</th>
+		<th style="width: 25%" scope="col">Created Date</th>
+	</tr>
+  </thead>
+  <tbody>
+    {% for todo in todos %}
+	<tr>
+		<td>{{todo.todo_description}}</td>
+		<td>{{todo.todo_created_date}}</td>
+	</tr>
+	{% endfor %}
+  </tbody>
+</table>
+{% endblock %}
